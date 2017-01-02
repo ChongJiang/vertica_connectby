@@ -1,0 +1,67 @@
+
+SQL*Plus: Release 11.2.0.3.0 Production on Wed Aug 1 12:27:30 2012
+
+Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL> SQL>   2    3    4    5  
+Table created.
+
+SQL> SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> 
+1 row created.
+
+SQL> SQL> 
+Commit complete.
+
+SQL> SQL>   2    3    4    5    6    7    8    9   10   11  
+ ID PARENT_ID NAME	 PATH_LEVEL ID_ROOT ID_PATH	    NAME_ROOT  NAME_PATH
+--- --------- ---------- ---------- ------- --------------- ---------- ------------------------------
+  1	    0 Patrick1		  1	  1 |1		    Patrick1   |Patrick1
+  2	    0 Patrick2		  1	  2 |2		    Patrick2   |Patrick2
+ 12	    1 Jim1		  2	  1 |1|12	    Patrick1   |Patrick1|Jim1
+ 13	    1 Sandy1		  2	  1 |1|13	    Patrick1   |Patrick1|Sandy1
+ 14	   13 Brian1		  3	  1 |1|13|14	    Patrick1   |Patrick1|Sandy1|Brian1
+ 15	   13 Otto1		  3	  1 |1|13|15	    Patrick1   |Patrick1|Sandy1|Otto1
+ 22	    2 Jim2		  2	  2 |2|22	    Patrick2   |Patrick2|Jim2
+ 23	    2 Sandy2		  2	  2 |2|23	    Patrick2   |Patrick2|Sandy2
+ 24	   23 Brian2		  3	  2 |2|23|24	    Patrick2   |Patrick2|Sandy2|Brian2
+ 25	   23 Otto2		  3	  2 |2|23|25	    Patrick2   |Patrick2|Sandy2|Otto2
+
+10 rows selected.
+
+SQL> SQL> 
+Table dropped.
+
+SQL> Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
